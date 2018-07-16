@@ -1,4 +1,4 @@
-I decided to make this Pokêdex app for a few reasons, I wanted to practice styling with SCSS and SASS which I just learned. I noticed a lot of job openings would mention knowledge of SASS as a great bonus, if not an outright requirement to know.
+I decided to make this Pokédex app for a few reasons, I wanted to practice styling with SCSS and SASS which I just learned. I noticed a lot of job openings would mention knowledge of SASS as a great bonus, if not an outright requirement to know.
 
 It solves quite a few problems, mainly having giant and unorganized CSS files. It also offers the nice bonus of being able to store CSS properties as variables. You can also use it in conjunction with several CSS frameworks.
 
