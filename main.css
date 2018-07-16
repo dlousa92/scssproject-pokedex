@@ -5,7 +5,7 @@ body {
   box-sizing: border-box;
 }
 
-.content, nav ul, body {
+main, .content, nav ul, body {
   display: flex;
 }
 
@@ -25,6 +25,8 @@ h1 {
   font-family: "Bowlby One", cursive;
   background: #DF5D56;
   margin: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 nav {
@@ -60,7 +62,24 @@ nav a {
 main {
   width: 83.3333333333%;
   overflow-y: scroll;
-  height: 400px;
+  height: 600px;
+  flex-direction: column;
+  align-items: center;
+  background: #62BC9D;
+}
+
+.screen {
+  background: #393B43;
+  width: 83.3333333333%;
+  margin-top: 40px;
+  height: 70%;
+}
+
+footer {
+  height: 51px;
+  background-color: #DF5D56;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
