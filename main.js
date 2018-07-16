@@ -26,7 +26,7 @@ function searchPokedex (e) {
       pokemonName.innerText = pokemon.name
       pokemonSpriteFront.src = pokemon.sprites.front_default
       pokemonHeight.innerText = `Height: ${pokemon.height}'`
-      pokemonWeight.innerText = `Weight: ${pokemon.weight}lbs`
+      pokemonWeight.innerText = `Weight: ${pokemon.weight} lbs`
       abilitiesHeader.innerText = 'Abilities'
 
       for (let i = 0; i < pokemon.types.length; i++) {
