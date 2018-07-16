@@ -1,0 +1,80 @@
+// Some variables I am using throughout my css file
+$font-stack: 'Montserrat', sans-serif;
+$font-headline: 'Bowlby One', cursive;
+$primary-color: #6D6C5F;
+$secondary-color: #FEEFA5;
+$pokedex-color: #DF5D56;
+
+// This is importting the reset.scss file which will reset some browser default css
+@import 'reset';
+
+// This mixin will allow you to use the transform property various times throughout your css in different ways
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+// Extending flex so CSS can be more DRY
+%flex {
+  display: flex;
+}
+
+%center-text {
+  text-align: center;
+}
+
+body {
+  font-family: $font-stack;
+  color: $primary-color;
+  @extend %flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+}
+
+h1 {
+  @extend %center-text;
+  font-family: $font-headline;
+  background: $pokedex-color;
+  margin: 0;
+}
+
+nav {
+  width: 200px / 960px * 100%;
+  background-color: $secondary-color;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    @extend %flex;
+    flex-direction: column;
+    align-items: center;
+      li {
+        padding: 40px 0px;
+      }
+  }
+
+  a {
+    text-decoration: none;
+    color: $primary-color;
+    @extend %center-text;
+  }
+}
+
+.box {
+  @include transform(rotate(30deg));
+}
+
+.content {
+  @extend %flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+main {
+  width: 800px / 960px * 100%;
+  overflow-y: scroll;
+  height: 400px;
+}
