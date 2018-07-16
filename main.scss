@@ -26,6 +26,10 @@ $screen-color: #393B43;
   text-align: center;
 }
 
+%border-bottom {
+  border-bottom: 3px solid $secondary-color;
+}
+
 body {
   font-family: $font-stack;
   color: $primary-color;
@@ -91,7 +95,58 @@ main {
   background: $screen-color;
   width: 800px / 960px * 100%;
   margin-top: 40px;
-  height: 70%;
+  @extend %flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .pokemoncard {
+    @extend %flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    color: $secondary-color;
+
+    .pokemonname {
+      font-family: $font-stack;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin: 0;
+      font-size: 40px;
+      @extend %border-bottom;
+    }
+
+    .pokemontypes {
+      @extend %flex;
+      margin: 0;
+    }
+
+    .pokemonsizes {
+      @extend %flex;
+    }
+
+    .abilitiesheader {
+      margin: 0;
+    }
+
+    .pokemoninfo {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+
+      p {
+        width: 50%;
+        @extend %center-text
+      }
+    }
+  }
+}
+
+.pokemonspritefront {
+  align-self: flex-start;
+  width: 300px;
+  min-width: 200px;
+  height: 300px; 
+  min-height: 100px;
 }
 
 footer {

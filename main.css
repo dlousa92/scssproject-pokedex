@@ -5,12 +5,16 @@ body {
   box-sizing: border-box;
 }
 
-main, .content, nav ul, body {
+.screen .pokemoncard .pokemonsizes, .screen .pokemoncard .pokemontypes, .screen .pokemoncard, .screen, main, .content, nav ul, body {
   display: flex;
 }
 
-nav a, h1 {
+.screen .pokemoncard .pokemoninfo p, nav a, h1 {
   text-align: center;
+}
+
+.screen .pokemoncard .pokemonname {
+  border-bottom: 3px solid #FEEFA5;
 }
 
 body {
@@ -72,7 +76,43 @@ main {
   background: #393B43;
   width: 83.3333333333%;
   margin-top: 40px;
-  height: 70%;
+  align-items: center;
+  justify-content: space-around;
+}
+.screen .pokemoncard {
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  color: #FEEFA5;
+}
+.screen .pokemoncard .pokemonname {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 40px;
+}
+.screen .pokemoncard .pokemontypes {
+  margin: 0;
+}
+.screen .pokemoncard .abilitiesheader {
+  margin: 0;
+}
+.screen .pokemoncard .pokemoninfo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.screen .pokemoncard .pokemoninfo p {
+  width: 50%;
+}
+
+.pokemonspritefront {
+  align-self: flex-start;
+  width: 300px;
+  min-width: 200px;
+  height: 300px;
+  min-height: 100px;
 }
 
 footer {
