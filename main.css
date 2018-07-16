@@ -1,0 +1,66 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content, nav ul, body {
+  display: flex;
+}
+
+nav a, h1 {
+  text-align: center;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #6D6C5F;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+}
+
+h1 {
+  font-family: "Bowlby One", cursive;
+  background: #DF5D56;
+  margin: 0;
+}
+
+nav {
+  width: 20.8333333333%;
+  background-color: #FEEFA5;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-direction: column;
+  align-items: center;
+}
+nav ul li {
+  padding: 40px 0px;
+}
+nav a {
+  text-decoration: none;
+  color: #6D6C5F;
+}
+
+.box {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.content {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+main {
+  width: 83.3333333333%;
+  overflow-y: scroll;
+  height: 400px;
+}
+
+/*# sourceMappingURL=main.css.map */
