@@ -4,6 +4,8 @@ $font-headline: 'Bowlby One', cursive;
 $primary-color: #6D6C5F;
 $secondary-color: #FEEFA5;
 $pokedex-color: #DF5D56;
+$accent-color: #62BC9D;
+$screen-color: #393B43;
 
 // This is importting the reset.scss file which will reset some browser default css
 @import 'reset';
@@ -38,6 +40,8 @@ h1 {
   font-family: $font-headline;
   background: $pokedex-color;
   margin: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 nav {
@@ -76,5 +80,23 @@ nav {
 main {
   width: 800px / 960px * 100%;
   overflow-y: scroll;
-  height: 400px;
+  height: 600px;
+  @extend %flex;
+  flex-direction: column;
+  align-items: center;
+  background: $accent-color;
+}
+
+.screen {
+  background: $screen-color;
+  width: 800px / 960px * 100%;
+  margin-top: 40px;
+  height: 70%;
+}
+
+footer {
+  height: 51px;
+  background-color: $pokedex-color;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
