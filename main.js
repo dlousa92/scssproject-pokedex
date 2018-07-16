@@ -5,7 +5,6 @@ const search = document.querySelector('.pokedexsearch')
 const nameQuery = document.querySelector('.searchvalue')
 const pokemonName = document.querySelector('.pokemonname')
 const pokemonSpriteFront = document.querySelector('.pokemonspritefront')
-const pokemonSpriteBack = document.querySelector('.pokemonspriteback')
 const pokemonInfo = document.querySelector('.pokemoninfo')
 const pokemonHeight = document.querySelector('.pokemonheight')
 const pokemonWeight = document.querySelector('.pokemonweight')
@@ -26,7 +25,6 @@ function searchPokedex (e) {
       console.log(pokemon)
       pokemonName.innerText = pokemon.name
       pokemonSpriteFront.src = pokemon.sprites.front_default
-      pokemonSpriteBack.src = pokemon.sprites.back_default
       pokemonHeight.innerText = `Height: ${pokemon.height}'`
       pokemonWeight.innerText = `Weight: ${pokemon.weight}lbs`
       abilitiesHeader.innerText = 'Abilities'
