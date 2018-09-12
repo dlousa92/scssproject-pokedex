@@ -76,6 +76,10 @@ main {
   border-left: 10px solid #DF5D56;
 }
 
+.quicktip {
+  color: #6D6C5F;
+}
+
 .screen {
   background: #ffffff;
   width: 83.3333333333%;
@@ -131,6 +135,22 @@ footer {
   background-color: #d31e14;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+
+.bioheader {
+  margin-top: 50px;
+}
+
+.bio {
+  color: #6D6C5F;
+  font-size: 1.1em;
+  padding: 60px;
+  line-height: 1.7em;
+}
+
+.biolink {
+  color: #d31e14;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */

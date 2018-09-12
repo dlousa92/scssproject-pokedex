@@ -30,6 +30,8 @@ $screen-color: #ffffff;
   border-bottom: 3px solid $secondary-color;
 }
 
+// This is all styling for index.html
+
 body {
   font-family: $font-stack;
   color: $screen-color;
@@ -94,6 +96,10 @@ main {
   align-items: center;
   background: #A19FA2;
   border-left: 10px solid #DF5D56;
+}
+
+.quicktip {
+  color: $primary-color;
 }
 
 .screen {
@@ -168,4 +174,21 @@ footer {
   background-color: $pokedex-color;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+
+// About page styling below
+.bioheader {
+  margin-top: 50px;
+}
+
+.bio {
+  color: $primary-color;
+  font-size: 1.1em;
+  padding: 60px;
+  line-height: 1.7em;
+}
+
+.biolink {
+  color: $pokedex-color;
+  text-decoration: none;
 }
