@@ -2,10 +2,10 @@
 $font-stack: 'Montserrat', sans-serif;
 $font-headline: 'Bowlby One', cursive;
 $primary-color: #6D6C5F;
-$secondary-color: #FEEFA5;
-$pokedex-color: #DF5D56;
+$secondary-color: rgba(22, 108, 236, 0.5);
+$pokedex-color: rgb(211, 30, 20);
 $accent-color: #62BC9D;
-$screen-color: #393B43;
+$screen-color: #ffffff;
 
 // This is importting the reset.scss file which will reset some browser default css
 @import 'reset';
@@ -32,7 +32,7 @@ $screen-color: #393B43;
 
 body {
   font-family: $font-stack;
-  color: $primary-color;
+  color: $screen-color;
   @extend %flex;
   flex-direction: column;
   margin: 40px auto;
