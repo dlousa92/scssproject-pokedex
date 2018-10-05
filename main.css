@@ -72,8 +72,8 @@ main {
   height: 600px;
   flex-direction: column;
   align-items: center;
-  background: #A19FA2;
-  border-left: 10px solid #DF5D56;
+  background: #6D6C5F;
+  border-left: 10px solid #d31e14;
 }
 
 .quicktip {
@@ -100,7 +100,7 @@ main {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   margin: 0;
-  font-size: 40px;
+  font-size: 2em;
 }
 .screen .pokemoncard .pokemontypes {
   margin: 0;
@@ -125,9 +125,7 @@ main {
 
 .pokemonspritefront {
   width: 300px;
-  min-width: 200px;
   height: 300px;
-  min-height: 100px;
 }
 
 footer {
@@ -161,14 +159,63 @@ footer {
 
   nav {
     width: 94.6%;
-    border-left: 10px solid #DF5D56;
+    border-left: 10px solid #d31e14;
   }
   nav ul {
     flex-direction: row;
     justify-content: space-around;
   }
+
+  main {
+    width: 94.6%;
+    border-right: 10px solid #d31e14;
+    font-size: 12px;
+  }
+
+  .screen {
+    flex-direction: column;
+  }
+
+  .pokemonspritefront {
+    width: 150px;
+    height: 100px;
+  }
+
+  .bio {
+    overflow-y: scroll;
+    padding: 40px;
+  }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .content {
+    flex-direction: column;
+  }
+
+  nav {
+    width: 96.6%;
+    border-left: 10px solid #d31e14;
+  }
+  nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  main {
+    width: 96.6%;
+    border-right: 10px solid #d31e14;
+    font-size: 12px;
+  }
+
+  .screen {
+    flex-direction: column;
+  }
+
+  .pokemonspritefront {
+    width: 150px;
+    height: 100px;
+  }
+}
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
