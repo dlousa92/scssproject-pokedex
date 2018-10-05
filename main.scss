@@ -195,12 +195,18 @@ footer {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
+  body {
+    width: 100%;
+    margin: 0;
+  }
+
   .content {
     flex-direction: column;
   }
 
   nav {
-    width: 94.6%;
+    width: 95.6%;
     border-left: 10px solid $pokedex-color;
     ul {
       flex-direction: row;
@@ -209,7 +215,7 @@ footer {
   }
 
   main {
-    width: 94.6%;
+    width: 95.6%;
     border-right: 10px solid $pokedex-color;
     font-size: 12px;
   }
